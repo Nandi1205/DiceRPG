@@ -1,0 +1,11 @@
+{
+  "ping": {
+    "name": "ping",
+    "description": "Check bot status.",
+    "options": [{
+      "name": "private",
+      "description": "Only show the reply to you. Default: True.",
+      "type": 5
+    }]
+  }
+}

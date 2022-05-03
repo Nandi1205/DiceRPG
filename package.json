@@ -1,0 +1,14 @@
+{
+  "name": "dicerpg",
+  "version": "0.0",
+  "description": "A fun, open-source Discord bot.",
+  "main": "main.js",
+  "author": "Nandi1205",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0"
+  }
+}
