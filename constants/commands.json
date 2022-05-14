@@ -1,7 +1,7 @@
 {
-  "ping": {
-    "name": "ping",
-    "description": "Check bot status.",
+  "info": {
+    "name": "info",
+    "description": "About the bot.",
     "options": [{
       "name": "private",
       "description": "Only show the reply to you. Default: True.",
