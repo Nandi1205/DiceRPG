@@ -1,9 +1,16 @@
 const discordJS = require('discord.js')
 
-module.exports = (interaction, title, description) => {
-  return new discordJS.MessageEmbed()
+module.exports = (user, title, description, fields) => {
+  const embed =
+  new discordJS.MessageEmbed()
   .setColor('#ff9966')
   .setTitle(title)
   .setDescription(description)
-  .setThumbnail(interaction.user.displayAvatarURL())
+  .setThumbnail(user.displayAvatarURL())
+
+  if (fields) {
+    embed.addFields(fields)
+  }
+
+  return embed
 }

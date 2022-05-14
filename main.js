@@ -3,6 +3,7 @@ Require order:
 
 fs
 discordJS
+users
 [anything-else]
 [constants]
 [functions]
@@ -38,6 +39,7 @@ client.once('ready', () => {
   })
 
   colorLog('info', client.user.username + ' is ready.')
+  colorLog('detail', `guilds: "${client.guilds.cache.size}"`)
 })
 client.on('interactionCreate', (interaction) => {
   if (!interaction.isCommand()) {

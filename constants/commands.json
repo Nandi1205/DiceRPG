@@ -4,8 +4,24 @@
     "description": "About the bot.",
     "options": [{
       "name": "private",
-      "description": "Only show the reply to you. Default: True.",
+      "description": "Only show the reply to you. Default: False.",
       "type": 5
     }]
+  },
+  "profile": {
+    "name": "profile",
+    "description": "Check someone's profile.",
+    "options": [
+      {
+        "name": "member",
+        "description": "Check this member's profile. Default: @you.",
+        "type": 9
+      },
+      {
+        "name": "private",
+        "description": "Only show the reply to you. Default: False.",
+        "type": 5
+      }
+    ]
   }
 }

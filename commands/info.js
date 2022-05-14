@@ -8,7 +8,7 @@ module.exports = (interaction) => {
 
   const embed =
   newEmbed(
-    interaction,
+    interaction.user,
     embedNames.info,
     'About: *A fun, open-source Discord bot.*\n' +
     `Version: *${package.version}*\n` +
