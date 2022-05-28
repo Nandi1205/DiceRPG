@@ -1,4 +1,51 @@
 {
+  "chop": {
+    "name": "chop",
+    "description": "Chop wood.",
+    "options": [
+      {
+        "name": "thing",
+        "description": "The type of wood to chop. Required.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "Oak",
+            "value": "Oak"
+          },
+          {
+            "name": "Birch",
+            "value": "Birch"
+          },
+          {
+            "name": "Spruce",
+            "value": "Spruce"
+          },
+          {
+            "name": "Fir",
+            "value": "Fir"
+          },
+          {
+            "name": "Maple",
+            "value": "Maple"
+          },
+          {
+            "name": "Mahogany",
+            "value": "Mahogany"
+          },
+          {
+            "name": "Sakura",
+            "value": "Sakura"
+          }
+        ]
+      },
+      {
+        "name": "private",
+        "description": "Only show the reply to you. Default: False.",
+        "type": 5
+      }
+    ]
+  },
   "info": {
     "name": "info",
     "description": "About the bot.",
@@ -13,9 +60,9 @@
     "description": "Check someone's profile.",
     "options": [
       {
-        "name": "member",
-        "description": "Check this member's profile. Default: @you.",
-        "type": 9
+        "name": "user",
+        "description": "Check this user's profile. Default: @you.",
+        "type": 6
       },
       {
         "name": "private",

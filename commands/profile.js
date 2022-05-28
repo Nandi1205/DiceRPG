@@ -1,22 +1,30 @@
 const users = require('../users.js')
 const embedNames = require('../constants/embed-names.json')
+const error = require('../functions/error.js')
 const newEmbed = require('../functions/new-embed.js')
 const newUser = require('../functions/new-user.js')
+const updateEnergy = require('../functions/update-energy.js')
 
 module.exports = (interaction) => {
-  const optionsMember = interaction.options.getMentionable('member') ?? interaction.member
+  const optionsUser = interaction.options.getMentionable('user') ?? interaction.user
 
-  newUser(optionsMember.id)
+  if (optionsUser.bot === true) {
+    return error(interaction, 'Can not check the profile of a bot user.')
+  }
 
-  const user = users[optionsMember.id]
+  newUser(optionsUser.id)
+  updateEnergy(interaction, optionsUser.id, 0)
+
+  const user = users[optionsUser.id]
 
   const embed =
   newEmbed(
-    optionsMember,
+    optionsUser,
     embedNames.profile,
     `XP: *${user.xp}*\n` +
     `Level: *${user.level}*\n` +
-    `Coins: *${user.coins}*\n`
+    `Coins: *${user.coins}*\n` +
+    `Energy: *${user.energy.amount}*\n`
   )
 
   interaction.reply({

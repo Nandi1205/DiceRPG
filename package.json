@@ -1,6 +1,6 @@
 {
-  "name": "dicerpg",
-  "version": "0.1",
+  "name": "dice-rpg",
+  "version": "0.3",
   "description": "A fun, open-source Discord bot.",
   "main": "main.js",
   "author": "Nandi1205",

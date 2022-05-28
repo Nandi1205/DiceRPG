@@ -1,0 +1,51 @@
+{
+  "Oak": {
+    "tier": 0,
+    "lootItemNames": [
+      "Oak Log",
+      "Leaf Bunch"
+    ]
+  },
+  "Birch": {
+    "tier": 1,
+    "lootItemNames": [
+      "Birch Log",
+      "Leaf Bunch"
+    ]
+  },
+  "Spruce": {
+    "tier": 3,
+    "lootItemNames": [
+      "Spruce Log",
+      "Leaf Bunch"
+    ]
+  },
+  "Fir": {
+    "tier": 4,
+    "lootItemNames": [
+      "Fir Log",
+      "Leaf Bunch"
+    ]
+  },
+  "Maple": {
+    "tier": 6,
+    "lootItemNames": [
+      "Maple Log",
+      "Leaf Bunch"
+    ]
+  },
+  "Mahogany": {
+    "tier": 7,
+    "lootItemNames": [
+      "Mahogany Log",
+      "Leaf Bunch"
+    ]
+  },
+  "Sakura": {
+    "tier": 8,
+    "lootItemNames": [
+      "Sakura Log",
+      "Leaf Bunch"
+    ]
+  }
+}

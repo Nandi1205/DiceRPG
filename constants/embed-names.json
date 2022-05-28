@@ -1,4 +1,6 @@
 {
+  "chop": ":axe: Chop",
   "info": ":notepad_spiral: Info",
-  "profile": ":notebook_with_decorative_cover: Profile"
+  "profile": ":notebook_with_decorative_cover: Profile",
+  "error": ":x: Error"
 }

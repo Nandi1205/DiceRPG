@@ -7,10 +7,10 @@ module.exports = () => {
   let minutesString = String(minutesNumber)
 
   if (hoursNumber <= 9) {
-    hoursString = '0' + String(hoursNumber)
+    hoursString = '0' + hoursString
   }
   if (minutesNumber <= 9) {
-    minutesString = '0' + String(minutesNumber)
+    minutesString = '0' + minutesString
   }
 
   return `${hoursString}:${minutesString}`
