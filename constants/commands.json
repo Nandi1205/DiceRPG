@@ -5,7 +5,7 @@
     "options": [
       {
         "name": "thing",
-        "description": "The type of wood to chop. Required.",
+        "description": "The wood to chop. Required.",
         "type": 3,
         "required": true,
         "choices": [
@@ -46,6 +46,207 @@
       }
     ]
   },
+  "fish": {
+    "name": "fish",
+    "description": "Fish fishes.",
+    "options": [
+      {
+        "name": "thing",
+        "description": "The fish to fish. Required.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "Shrimp",
+            "value": "Shrimp"
+          },
+          {
+            "name": "Trout",
+            "value": "Trout"
+          },
+          {
+            "name": "Cod",
+            "value": "Cod"
+          },
+          {
+            "name": "Bass",
+            "value": "Bass"
+          },
+          {
+            "name": "Carp",
+            "value": "Carp"
+          },
+          {
+            "name": "Tuna",
+            "value": "Tuna"
+          },
+          {
+            "name": "Salmon",
+            "value": "Salmon"
+          },
+          {
+            "name": "Pufferfish",
+            "value": "Pufferfish"
+          },
+          {
+            "name": "Flounder",
+            "value": "Flounder"
+          },
+          {
+            "name": "Stingray",
+            "value": "Stingray"
+          },
+          {
+            "name": "Lemon Shark",
+            "value": "Lemon Shark"
+          },
+          {
+            "name": "Great White Shark",
+            "value": "Great White Shark"
+          }
+        ]
+      },
+      {
+        "name": "private",
+        "description": "Only show the reply to you. Default: False.",
+        "type": 5
+      }
+    ]
+  },
+  "forage": {
+    "name": "forage",
+    "description": "Forage plants.",
+    "options": [
+      {
+        "name": "thing",
+        "description": "The plant to forage. Required.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "Dandelion",
+            "value": "Dandelion"
+          },
+          {
+            "name": "Wild Lettuce",
+            "value": "Wild Lettuce"
+          },
+          {
+            "name": "Cranberry",
+            "value": "Cranberry"
+          },
+          {
+            "name": "Blueberry",
+            "value": "Blueberry"
+          },
+          {
+            "name": "Spearmint",
+            "value": "Spearmint"
+          },
+          {
+            "name": "Button Mushroom",
+            "value": "Button Mushroom"
+          },
+          {
+            "name": "Peppermint",
+            "value": "Peppermint"
+          },
+          {
+            "name": "Hemp",
+            "value": "Hemp"
+          },
+          {
+            "name": "Raspberry",
+            "value": "Raspberry"
+          },
+          {
+            "name": "Blackberry",
+            "value": "Blackberry"
+          },
+          {
+            "name": "Strawberry",
+            "value": "Strawberry"
+          },
+          {
+            "name": "Chanterelle Mushroom",
+            "value": "Chanterelle Mushroom"
+          },
+          {
+            "name": "Truffle",
+            "value": "Truffle"
+          }
+        ]
+      },
+      {
+        "name": "private",
+        "description": "Only show the reply to you. Default: False.",
+        "type": 5
+      }
+    ]
+  },
+  "hunt": {
+    "name": "hunt",
+    "description": "Hunt animals.",
+    "options": [
+      {
+        "name": "thing",
+        "description": "The animal to hunt. Required.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "Rabbit",
+            "value": "Rabbit"
+          },
+          {
+            "name": "Deer",
+            "value": "Deer"
+          },
+          {
+            "name": "Coyote",
+            "value": "Coyote"
+          },
+          {
+            "name": "Wolf",
+            "value": "Wolf"
+          },
+          {
+            "name": "Wild Sheep",
+            "value": "Wild Sheep"
+          },
+          {
+            "name": "Boar",
+            "value": "Boar"
+          },
+          {
+            "name": "Elk",
+            "value": "Elk"
+          },
+          {
+            "name": "Black Bear",
+            "value": "Black Bear"
+          },
+          {
+            "name": "Moose",
+            "value": "Moose"
+          },
+          {
+            "name": "Brown Bear",
+            "value": "Brown Bear"
+          },
+          {
+            "name": "Polar Bear",
+            "value": "Polar Bear"
+          }
+        ]
+      },
+      {
+        "name": "private",
+        "description": "Only show the reply to you. Default: False.",
+        "type": 5
+      }
+    ]
+  },
   "info": {
     "name": "info",
     "description": "About the bot.",
@@ -55,13 +256,88 @@
       "type": 5
     }]
   },
+  "mine": {
+    "name": "mine",
+    "description": "Mine resources.",
+    "options": [
+      {
+        "name": "thing",
+        "description": "The resource to mine. Required.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "Stone",
+            "value": "Stone"
+          },
+          {
+            "name": "Copper",
+            "value": "Copper"
+          },
+          {
+            "name": "Tin",
+            "value": "Tin"
+          },
+          {
+            "name": "Coal",
+            "value": "Coal"
+          },
+          {
+            "name": "Gold",
+            "value": "Gold"
+          },
+          {
+            "name": "Iron",
+            "value": "Iron"
+          },
+          {
+            "name": "Sand",
+            "value": "Sand"
+          },
+          {
+            "name": "Titanium",
+            "value": "Titanium"
+          },
+          {
+            "name": "Gravel",
+            "value": "Gravel"
+          },
+          {
+            "name": "Ruby",
+            "value": "Ruby"
+          },
+          {
+            "name": "Emerald",
+            "value": "Emerald"
+          },
+          {
+            "name": "Sapphire",
+            "value": "Sapphire"
+          },
+          {
+            "name": "Amethyst",
+            "value": "Amethyst"
+          },
+          {
+            "name": "Diamond",
+            "value": "Diamond"
+          }
+        ]
+      },
+      {
+        "name": "private",
+        "description": "Only show the reply to you. Default: False.",
+        "type": 5
+      }
+    ]
+  },
   "profile": {
     "name": "profile",
     "description": "Check someone's profile.",
     "options": [
       {
-        "name": "user",
-        "description": "Check this user's profile. Default: @you.",
+        "name": "player",
+        "description": "Check this player's profile. Default: @you.",
         "type": 6
       },
       {

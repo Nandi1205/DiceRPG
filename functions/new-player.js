@@ -1,11 +1,11 @@
-const users = require('../users.js')
+const players = require('../players.js')
 
 module.exports = (userId) => {
-  if (users[userId] !== undefined) {
+  if (players[userId] !== undefined) {
     return
   }
 
-  users[userId] = {
+  players[userId] = {
     'xp': 0,
     'level': 0,
     'coins': 0,

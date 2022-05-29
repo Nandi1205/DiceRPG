@@ -1,5 +1,5 @@
 const embedNames = require('../constants/embed-names.json')
-const newEmbed = require('../functions/new-embed.js')
+const newEmbed = require('./new-embed.js')
 
 module.exports = (interaction, errorMessage) => {
   const embed =
