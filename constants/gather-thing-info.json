@@ -1,433 +1,433 @@
 {
-  "Oak": {
-    "plural": "Oaks",
+  "oak": {
+    "plural": "oaks",
     "tier": 0,
     "lootItemNames": [
       "Oak Log",
       "Leaf Bunch"
     ]
   },
-  "Birch": {
-    "plural": "Birches",
+  "birch": {
+    "plural": "birches",
     "tier": 1,
     "lootItemNames": [
       "Birch Log",
       "Leaf Bunch"
     ]
   },
-  "Spruce": {
-    "plural": "Spruces",
+  "spruce": {
+    "plural": "spruces",
     "tier": 3,
     "lootItemNames": [
       "Spruce Log",
       "Leaf Bunch"
     ]
   },
-  "Fir": {
-    "plural": "Firs",
+  "fir": {
+    "plural": "firs",
     "tier": 4,
     "lootItemNames": [
       "Fir Log",
       "Leaf Bunch"
     ]
   },
-  "Maple": {
-    "plural": "Maples",
+  "maple": {
+    "plural": "maples",
     "tier": 6,
     "lootItemNames": [
       "Maple Log",
       "Leaf Bunch"
     ]
   },
-  "Mahogany": {
-    "plural": "Mahoganies",
+  "mahogany": {
+    "plural": "mahoganies",
     "tier": 7,
     "lootItemNames": [
       "Mahogany Log",
       "Leaf Bunch"
     ]
   },
-  "Sakura": {
-    "plural": "Sakuras",
+  "sakura": {
+    "plural": "sakuras",
     "tier": 8,
     "lootItemNames": [
       "Sakura Log",
       "Leaf Bunch"
     ]
   },
-  "Stone": {
-    "plural": "Stone",
+  "stone": {
+    "plural": "stone",
     "tier": 0,
     "lootItemNames": [
       "Stone Chunk"
     ]
   },
-  "Copper": {
-    "plural": "Copper",
+  "copper": {
+    "plural": "copper",
     "tier": 0,
     "lootItemNames": [
       "Copper Chunk"
     ]
   },
-  "Tin": {
-    "plural": "Tin",
+  "tin": {
+    "plural": "tin",
     "tier": 0,
     "lootItemNames": [
       "Tin Chunk"
     ]
   },
-  "Coal": {
-    "plural": "Coal",
+  "coal": {
+    "plural": "coal",
     "tier": 1,
     "lootItemNames": [
       "Coal Chunk"
     ]
   },
-  "Gold": {
-    "plural": "Gold",
+  "gold": {
+    "plural": "gold",
     "tier": 1,
     "lootItemNames": [
       "Tin Chunk"
     ]
   },
-  "Iron": {
-    "plural": "Iron",
+  "iron": {
+    "plural": "iron",
     "tier": 3,
     "lootItemNames": [
       "Iron Chunk"
     ]
   },
-  "Sand": {
-    "plural": "Sand",
+  "sand": {
+    "plural": "sand",
     "tier": 3,
     "lootItemNames": [
       "Sand Bunch"
     ]
   },
-  "Titanium": {
-    "plural": "Titanium",
+  "titanium": {
+    "plural": "titanium",
     "tier": 4,
     "lootItemNames": [
       "Titanium Chunk"
     ]
   },
-  "Gravel": {
-    "plural": "Gravel",
+  "gravel": {
+    "plural": "gravel",
     "tier": 4,
     "lootItemNames": [
       "Gravel Bunch"
     ]
   },
-  "Ruby": {
-    "plural": "Rubies",
+  "ruby": {
+    "plural": "rubies",
     "tier": 6,
     "lootItemNames": [
       "Ruby Chunk"
     ]
   },
-  "Emerald": {
-    "plural": "Emeralds",
+  "emerald": {
+    "plural": "emeralds",
     "tier": 6,
     "lootItemNames": [
       "Emerald Chunk"
     ]
   },
-  "Sapphire": {
-    "plural": "Sapphires",
+  "sapphire": {
+    "plural": "sapphires",
     "tier": 7,
     "lootItemNames": [
       "Sapphire Chunk"
     ]
   },
-  "Amethyst": {
-    "plural": "Amethysts",
+  "amethyst": {
+    "plural": "amethysts",
     "tier": 7,
     "lootItemNames": [
       "Amethyst Chunk"
     ]
   },
-  "Diamond": {
-    "plural": "Diamonds",
+  "diamond": {
+    "plural": "diamonds",
     "tier": 8,
     "lootItemNames": [
       "Diamond Chunk"
     ]
   },
-  "Shrimp": {
-    "plural": "Shrimps",
+  "shrimp": {
+    "plural": "shrimps",
     "tier": 0,
     "lootItemNames": [
       "Shrimp"
     ]
   },
-  "Trout": {
-    "plural": "Trouts",
+  "trout": {
+    "plural": "trouts",
     "tier": 1,
     "lootItemNames": [
       "Trout Fillet",
       "Bone Fragment"
     ]
   },
-  "Cod": {
-    "plural": "Cods",
+  "cod": {
+    "plural": "cods",
     "tier": 1,
     "lootItemNames": [
       "Cod Fillet",
       "Bone Fragment"
     ]
   },
-  "Bass": {
-    "plural": "Basses",
+  "bass": {
+    "plural": "basses",
     "tier": 3,
     "lootItemNames": [
       "Bass Fillet",
       "Bone Fragment"
     ]
   },
-  "Carp": {
-    "plural": "Carps",
+  "carp": {
+    "plural": "carps",
     "tier": 3,
     "lootItemNames": [
       "Carp Fillet",
       "Bone Fragment"
     ]
   },
-  "Tuna": {
-    "plural": "Tunas",
+  "tuna": {
+    "plural": "tunas",
     "tier": 4,
     "lootItemNames": [
       "Tuna Fillet",
       "Bone Fragment"
     ]
   },
-  "Salmon": {
-    "plural": "Salmons",
+  "salmon": {
+    "plural": "salmons",
     "tier": 4,
     "lootItemNames": [
       "Salmon Fillet",
       "Bone Fragment"
     ]
   },
-  "Pufferfish": {
-    "plural": "Pufferfishes",
+  "pufferfish": {
+    "plural": "pufferfishes",
     "tier": 6,
     "lootItemNames": [
       "Pufferfish Fillet",
       "Bone Fragment"
     ]
   },
-  "Flounder": {
-    "plural": "Flounders",
+  "flounder": {
+    "plural": "flounders",
     "tier": 6,
     "lootItemNames": [
       "Flounder Fillet",
       "Bone Fragment"
     ]
   },
-  "Stingray": {
-    "plural": "Stingrays",
+  "stingray": {
+    "plural": "stingrays",
     "tier": 7,
     "lootItemNames": [
       "Stingray Fillet",
       "Bone Fragment"
     ]
   },
-  "Lemon Shark": {
-    "plural": "Lemon Sharks",
+  "lemon shark": {
+    "plural": "lemon sharks",
     "tier": 7,
     "lootItemNames": [
       "Lemon Shark Fillet",
       "Bone Fragment"
     ]
   },
-  "Great White Shark": {
-    "plural": "Great White Sharks",
+  "great white shark": {
+    "plural": "great white sharks",
     "tier": 8,
     "lootItemNames": [
       "Great White Shark Fillet",
       "Bone Fragment"
     ]
   },
-  "Dandelion": {
-    "plural": "Dandelions",
+  "dandelion": {
+    "plural": "dandelions",
     "tier": 0,
     "lootItemNames": [
       "Dandelion"
     ]
   },
-  "Wild Lettuce": {
-    "plural": "Wild Lettuce",
+  "wild lettuce": {
+    "plural": "wild lettuce",
     "tier": 0,
     "lootItemNames": [
       "Wild Lettuce Leaf"
     ]
   },
-  "Cranberry": {
-    "plural": "Cranberries",
+  "cranberry": {
+    "plural": "cranberries",
     "tier": 1,
     "lootItemNames": [
       "Cranberry"
     ]
   },
-  "Blueberry": {
-    "plural": "Blueberries",
+  "blueberry": {
+    "plural": "blueberries",
     "tier": 1,
     "lootItemNames": [
       "Blueberry"
     ]
   },
-  "Spearmint": {
-    "plural": "Spearmint",
+  "spearmint": {
+    "plural": "spearmint",
     "tier": 3,
     "lootItemNames": [
       "Spearmint Leaf"
     ]
   },
-  "Button Mushroom": {
-    "plural": "Button Mushrooms",
+  "button mushroom": {
+    "plural": "button mushrooms",
     "tier": 3,
     "lootItemNames": [
       "Button Mushroom"
     ]
   },
-  "Peppermint": {
-    "plural": "Peppermint",
+  "peppermint": {
+    "plural": "peppermint",
     "tier": 4,
     "lootItemNames": [
       "Peppermint Leaf"
     ]
   },
-  "Hemp": {
-    "plural": "Hemp",
+  "hemp": {
+    "plural": "hemp",
     "tier": 4,
     "lootItemNames": [
       "Hemp Stalk"
     ]
   },
-  "Raspberry": {
-    "plural": "Raspberries",
+  "raspberry": {
+    "plural": "raspberries",
     "tier": 6,
     "lootItemNames": [
       "Raspberry"
     ]
   },
-  "Blackberry": {
-    "plural": "Blackberries",
+  "blackberry": {
+    "plural": "blackberries",
     "tier": 6,
     "lootItemNames": [
       "Blackberry"
     ]
   },
-  "Strawberry": {
-    "plural": "Strawberries",
+  "strawberry": {
+    "plural": "strawberries",
     "tier": 7,
     "lootItemNames": [
       "Strawberry"
     ]
   },
-  "Chanterelle Mushroom": {
-    "plural": "Chanterelle Mushrooms",
+  "chanterelle mushroom": {
+    "plural": "chanterelle mushrooms",
     "tier": 7,
     "lootItemNames": [
       "Chanterelle Mushroom"
     ]
   },
-  "Truffle": {
-    "plural": "Truffles",
+  "truffle": {
+    "plural": "truffles",
     "tier": 8,
     "lootItemNames": [
       "Truffle"
     ]
   },
-  "Cotton": {
-    "plural": "Cotton",
+  "cotton": {
+    "plural": "cotton",
     "tier": 8,
     "lootItemNames": [
       "Cotton Ball"
     ]
   },
-  "Rabbit": {
-    "plural": "Rabbits",
+  "rabbit": {
+    "plural": "rabbits",
     "tier": 0,
     "lootItemNames": [
       "White Meat Chunk",
       "Rabbit Hide"
     ]
   },
-  "Deer": {
-    "plural": "Deers",
+  "deer": {
+    "plural": "deers",
     "tier": 1,
     "lootItemNames": [
       "Red Meat Chunk",
       "Deer Hide"
     ]
   },
-  "Coyote": {
-    "plural": "Coyotes",
+  "coyote": {
+    "plural": "coyotes",
     "tier": 1,
     "lootItemNames": [
       "Red Meat Chunk",
       "Coyote Hide"
     ]
   },
-  "Wolf": {
-    "plural": "Wolves",
+  "wolf": {
+    "plural": "wolves",
     "tier": 3,
     "lootItemNames": [
       "Red Meat Chunk",
       "Wolf Hide"
     ]
   },
-  "Wild Sheep": {
-    "plural": "Wild Sheeps",
+  "wild sheep": {
+    "plural": "wild sheeps",
     "tier": 3,
     "lootItemNames": [
       "Red Meat Chunk",
       "Wild Sheep Hide"
     ]
   },
-  "Boar": {
-    "plural": "Boars",
+  "boar": {
+    "plural": "boars",
     "tier": 4,
     "lootItemNames": [
       "Red Meat Chunk",
       "Boar Hide"
     ]
   },
-  "Elk": {
-    "plural": "Elks",
+  "elk": {
+    "plural": "elks",
     "tier": 6,
     "lootItemNames": [
       "Red Meat Chunk",
       "Elk Hide"
     ]
   },
-  "Black Bear": {
-    "plural": "Black Bears",
+  "black bear": {
+    "plural": "black bears",
     "tier": 6,
     "lootItemNames": [
       "Red Meat Chunk",
       "Black Bear Hide"
     ]
   },
-  "Moose": {
-    "plural": "Mooses",
+  "moose": {
+    "plural": "mooses",
     "tier": 7,
     "lootItemNames": [
       "Red Meat Chunk",
       "Moose Hide"
     ]
   },
-  "Brown Bear": {
-    "plural": "Brown Bears",
+  "brown bear": {
+    "plural": "brown bears",
     "tier": 7,
     "lootItemNames": [
       "Red Meat Chunk",
       "Brown Bear Hide"
     ]
   },
-  "Polar Bear": {
-    "plural": "Polar Bears",
+  "polar bear": {
+    "plural": "polar bears",
     "tier": 8,
     "lootItemNames": [
       "Red Meat Chunk",

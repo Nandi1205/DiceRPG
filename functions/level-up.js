@@ -1,5 +1,4 @@
 const players = require('../players.js')
-const embedNames = require('../constants/embed-names.json')
 const levelRequirements = require('../constants/level-requirements.json')
 const newEmbed = require('./new-embed.js')
 
@@ -17,8 +16,8 @@ module.exports = (user) => {
   const embed =
   newEmbed(
     user,
-    embedNames.levelUp,
-    `You have levelled up! Your level now is:\n*${player.level}*.`
+    ':tada: Level Up',
+    `You have levelled up! Your level now is:\n*${player.level}/50*`
   )
 
   return embed

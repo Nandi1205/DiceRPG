@@ -1,15 +1,14 @@
 const players = require('../players.js')
-const embedNames = require('../constants/embed-names.json')
 const error = require('../functions/error.js')
 const newEmbed = require('../functions/new-embed.js')
 const newPlayer = require('../functions/new-player.js')
 const updateEnergy = require('../functions/update-energy.js')
 
 module.exports = (interaction) => {
-  const optionsUser = interaction.options.getMentionable('user') ?? interaction.user
+  const optionsUser = interaction.options.getUser('user') ?? interaction.user
 
-  if (optionsUser.bot === true) {
-    return error(interaction, 'Can not check the profile of a bot.')
+  if (optionsUser.bot) {
+    return error(interaction, "Can't check the profile of a bot.")
   }
 
   newPlayer(optionsUser.id)
@@ -20,7 +19,7 @@ module.exports = (interaction) => {
   const embed =
   newEmbed(
     optionsUser,
-    embedNames.profile,
+    ':notebook_with_decorative_cover: Profile',
     `Level: *${player.level}/50*\n` +
     `XP: *${player.xp}*\n` +
     `Energy: *${player.energy.amount}/10*\n` +

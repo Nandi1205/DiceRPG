@@ -1,0 +1,41 @@
+{
+  "action": [
+    "You went to COMMAND THING",
+    "You found THING so you decided to COMMAND some",
+    "You found THING so you decided to COMMAND a bit",
+    "You noticed a lot of THING so you decided to COMMAND some",
+    "You noticed a lot of THING so you decided to COMMAND a bit",
+    "While gathering, you went to COMMAND some THING",
+    "While gathering, you went to COMMAND a bit THING"
+  ],
+  "energy": [
+    [
+      "."
+    ],
+    [
+      ", losing a bit of energy.",
+      ", losing a bit of energy in the process.",
+      ", and lost a bit of energy.",
+      ", and lost a bit of energy in the process.",
+      ", getting slightly more tired.",
+      ", getting slightly more tired in the process.",
+      ", getting a bit more tired.",
+      ", getting a bit more tired in the process.",
+      ". You feel a bit sleepier.",
+      ". You feel slightly sleepier.",
+      ", getting sleepier.",
+      ", getting sleepier in the process.",
+      ", getting a bit sleepier.",
+      ", getting a bit sleepier in the process.",
+      ", getting slightly sleepier.",
+      ", getting slightly sleepier in the process."
+    ]
+  ],
+  "got": [
+    "got",
+    "gathered",
+    "obtained",
+    "acquired",
+    "gained"
+  ]
+}

@@ -1,6 +1,6 @@
 const players = require('../players.js')
-const embedNames = require('../constants/embed-names.json')
-const gatherInfo = require('../constants/gather-info.json')
+const gatherEmbedInfo = require('../constants/gather-embed-info.json')
+const gatherThingInfo = require('../constants/gather-thing-info.json')
 const gatherLootTables = require('../constants/gather-loot-tables.json')
 const error = require('./error.js')
 const levelUp = require('./level-up.js')
@@ -12,61 +12,87 @@ const updateEnergy = require('./update-energy.js')
 
 module.exports = (interaction, tool) => {
   newPlayer(interaction.user.id)
-  if (updateEnergy(interaction, interaction.user.id, 1)) {
-    return
-  }
 
   const optionsThing = interaction.options.getString('thing')
   const player = players[interaction.user.id]
-  const gatherLootTable = gatherLootTables[gatherInfo[optionsThing].tier][player[tool].tier]
+  const gatherLootTable = gatherLootTables[gatherThingInfo[optionsThing].tier][player[tool].tier]
 
-  if (gatherLootTable === null) {
+  if (!gatherLootTable) {
     return error(
       interaction,
       `Your tool's tier is not high enough to ${interaction.commandName} this thing.`
     )
   }
 
-  const newXP = Math.floor(randomBetween(gatherLootTable.xp, gatherLootTable.xp * 2))
+  const optionsMultiplier = interaction.options.getInteger('multiplier') ?? 1
+
+  if (updateEnergy(interaction, interaction.user.id, optionsMultiplier)) {
+    return
+  }
+
+  let newXP = 0
+
+  for (let i = 0; i < optionsMultiplier; i ++) {
+    newXP += Math.floor(randomBetween(gatherLootTable.xp, gatherLootTable.xp * 2))
+  }
 
   players[interaction.user.id].xp += newXP
 
-  let embedText = ''
-  let i = 1
+  let embedNewItems = ''
+  let j = 1
 
-  gatherInfo[optionsThing].lootItemNames.forEach((lootItemName) => {
-    const newItem = Math.floor(randomBetween(gatherLootTable.items, gatherLootTable.items * 2) * i)
+  gatherThingInfo[optionsThing].lootItemNames.forEach((lootItemName) => {
+    let newItem = 0
 
-    if (player.inventory[lootItemName] === undefined) {
+    for (let i = 0; i < optionsMultiplier; i ++) {
+      newItem += Math.floor(randomBetween(gatherLootTable.items, gatherLootTable.items * 2) * j)
+    }
+
+    if (!player.inventory[lootItemName]) {
       players[interaction.user.id].inventory[lootItemName] = 0
     }
 
     players[interaction.user.id].inventory[lootItemName] += newItem
 
-    embedText += `\n+${newItem} ${pluralize(lootItemName)}`
+    embedNewItems += `\n+${newItem} ${pluralize(lootItemName)}`
 
-    i /= 2
+    j /= 2
   })
+
+  const embedName =
+  {
+    'chop': ':axe: Chop',
+    'mine': ':pick: Mine',
+    'fish': ':fishing_pole_and_fish: Fish',
+    'forage': ':scissors: Forage',
+    'hunt': ':bow_and_arrow: Hunt'
+  }[interaction.commandName]
+
+  const embedInfoEnergy = randomBetween(0, 1)
+
+  const embedDescription =
+  gatherEmbedInfo.action[randomBetween(0, gatherEmbedInfo.action.length - 1)]
+  .replace('COMMAND', interaction.commandName)
+  .replace('THING', gatherThingInfo[optionsThing].plural) +
+  gatherEmbedInfo.energy[
+    embedInfoEnergy
+  ][
+    randomBetween(0, gatherEmbedInfo.energy[embedInfoEnergy].length - 1)
+  ] +
+  ` You ${gatherEmbedInfo.got[randomBetween(0, gatherEmbedInfo.got.length - 1)]}:\n` +
+  `*+${newXP} XP${embedNewItems}*`
 
   const embed =
   newEmbed(
     interaction.user,
-    embedNames[interaction.commandName],
-    `You went to ${interaction.commandName} for ${gatherInfo[optionsThing].plural} and got:\n` +
-    `*+${newXP} XP${embedText}*`
+    optionsMultiplier === 1 ? embedName : `${embedName} x${optionsMultiplier}`,
+    embedDescription
   )
 
   const levelUpEmbed = levelUp(interaction.user)
 
-  if (levelUpEmbed === undefined) {
-    interaction.reply({
-      embeds: [embed],
-      ephemeral: interaction.options.getBoolean('private') ?? false
-    })
-  } else {
-    interaction.reply({
-      embeds: [embed, levelUpEmbed],
-      ephemeral: interaction.options.getBoolean('private') ?? false
-    })
-  }
+  interaction.reply({
+    embeds: levelUpEmbed ? [embed, levelUpEmbed] : [embed],
+    ephemeral: interaction.options.getBoolean('private') ?? false
+  })
 }

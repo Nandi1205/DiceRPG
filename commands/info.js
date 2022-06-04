@@ -1,6 +1,5 @@
 const discordJS = require('discord.js')
 const package = require('../package.json')
-const embedNames = require('../constants/embed-names.json')
 const newEmbed = require('../functions/new-embed.js')
 
 module.exports = (interaction) => {
@@ -9,7 +8,7 @@ module.exports = (interaction) => {
   const embed =
   newEmbed(
     interaction.user,
-    embedNames.info,
+    ':notepad_spiral: Info',
     'About: *A fun, open-source Discord bot.*\n' +
     `Version: *${package.version}*\n` +
     'Developer: *Nandi1205*\n' +

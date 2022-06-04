@@ -20,7 +20,7 @@ module.exports = (interaction, userId, energyChange) => {
   }
 
   if (energy.amount - energyChange < 0) {
-    return error(interaction, 'You do not have enough energy.')
+    return error(interaction, "You don't have enough energy.")
   }
 
   players[userId].energy.amount -= energyChange

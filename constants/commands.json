@@ -11,33 +11,38 @@
         "choices": [
           {
             "name": "Oak",
-            "value": "Oak"
+            "value": "oak"
           },
           {
             "name": "Birch",
-            "value": "Birch"
+            "value": "birch"
           },
           {
             "name": "Spruce",
-            "value": "Spruce"
+            "value": "spruce"
           },
           {
             "name": "Fir",
-            "value": "Fir"
+            "value": "fir"
           },
           {
             "name": "Maple",
-            "value": "Maple"
+            "value": "maple"
           },
           {
             "name": "Mahogany",
-            "value": "Mahogany"
+            "value": "mahogany"
           },
           {
             "name": "Sakura",
-            "value": "Sakura"
+            "value": "sakura"
           }
         ]
+      },
+      {
+        "name": "multiplier",
+        "description": "How many times to 'run' the command. Default: 1.",
+        "type": 4
       },
       {
         "name": "private",
@@ -58,53 +63,58 @@
         "choices": [
           {
             "name": "Shrimp",
-            "value": "Shrimp"
+            "value": "shrimp"
           },
           {
             "name": "Trout",
-            "value": "Trout"
+            "value": "trout"
           },
           {
             "name": "Cod",
-            "value": "Cod"
+            "value": "cod"
           },
           {
             "name": "Bass",
-            "value": "Bass"
+            "value": "bass"
           },
           {
             "name": "Carp",
-            "value": "Carp"
+            "value": "carp"
           },
           {
             "name": "Tuna",
-            "value": "Tuna"
+            "value": "tuna"
           },
           {
             "name": "Salmon",
-            "value": "Salmon"
+            "value": "salmon"
           },
           {
             "name": "Pufferfish",
-            "value": "Pufferfish"
+            "value": "pufferfish"
           },
           {
             "name": "Flounder",
-            "value": "Flounder"
+            "value": "flounder"
           },
           {
             "name": "Stingray",
-            "value": "Stingray"
+            "value": "stingray"
           },
           {
             "name": "Lemon Shark",
-            "value": "Lemon Shark"
+            "value": "lemon shark"
           },
           {
             "name": "Great White Shark",
-            "value": "Great White Shark"
+            "value": "great white shark"
           }
         ]
+      },
+      {
+        "name": "multiplier",
+        "description": "How many times to 'run' the command. Default: 1.",
+        "type": 4
       },
       {
         "name": "private",
@@ -125,57 +135,62 @@
         "choices": [
           {
             "name": "Dandelion",
-            "value": "Dandelion"
+            "value": "dandelion"
           },
           {
             "name": "Wild Lettuce",
-            "value": "Wild Lettuce"
+            "value": "wild lettuce"
           },
           {
             "name": "Cranberry",
-            "value": "Cranberry"
+            "value": "cranberry"
           },
           {
             "name": "Blueberry",
-            "value": "Blueberry"
+            "value": "blueberry"
           },
           {
             "name": "Spearmint",
-            "value": "Spearmint"
+            "value": "spearmint"
           },
           {
             "name": "Button Mushroom",
-            "value": "Button Mushroom"
+            "value": "button mushroom"
           },
           {
             "name": "Peppermint",
-            "value": "Peppermint"
+            "value": "peppermint"
           },
           {
             "name": "Hemp",
-            "value": "Hemp"
+            "value": "hemp"
           },
           {
             "name": "Raspberry",
-            "value": "Raspberry"
+            "value": "raspberry"
           },
           {
             "name": "Blackberry",
-            "value": "Blackberry"
+            "value": "blackberry"
           },
           {
             "name": "Strawberry",
-            "value": "Strawberry"
+            "value": "strawberry"
           },
           {
             "name": "Chanterelle Mushroom",
-            "value": "Chanterelle Mushroom"
+            "value": "chanterelle mushroom"
           },
           {
             "name": "Truffle",
-            "value": "Truffle"
+            "value": "truffle"
           }
         ]
+      },
+      {
+        "name": "multiplier",
+        "description": "How many times to 'run' the command. Default: 1.",
+        "type": 4
       },
       {
         "name": "private",
@@ -196,49 +211,54 @@
         "choices": [
           {
             "name": "Rabbit",
-            "value": "Rabbit"
+            "value": "rabbit"
           },
           {
             "name": "Deer",
-            "value": "Deer"
+            "value": "deer"
           },
           {
             "name": "Coyote",
-            "value": "Coyote"
+            "value": "coyote"
           },
           {
             "name": "Wolf",
-            "value": "Wolf"
+            "value": "wolf"
           },
           {
             "name": "Wild Sheep",
-            "value": "Wild Sheep"
+            "value": "wild sheep"
           },
           {
             "name": "Boar",
-            "value": "Boar"
+            "value": "boar"
           },
           {
             "name": "Elk",
-            "value": "Elk"
+            "value": "elk"
           },
           {
             "name": "Black Bear",
-            "value": "Black Bear"
+            "value": "black bear"
           },
           {
             "name": "Moose",
-            "value": "Moose"
+            "value": "moose"
           },
           {
             "name": "Brown Bear",
-            "value": "Brown Bear"
+            "value": "brown bear"
           },
           {
             "name": "Polar Bear",
-            "value": "Polar Bear"
+            "value": "polar bear"
           }
         ]
+      },
+      {
+        "name": "multiplier",
+        "description": "How many times to 'run' the command. Default: 1.",
+        "type": 4
       },
       {
         "name": "private",
@@ -256,6 +276,22 @@
       "type": 5
     }]
   },
+  "inventory": {
+    "name": "inventory",
+    "description": "Check someone's inventory.",
+    "options": [
+      {
+        "name": "user",
+        "description": "Check this user's inventory. Default: @you.",
+        "type": 6
+      },
+      {
+        "name": "private",
+        "description": "Only show the reply to you. Default: False.",
+        "type": 5
+      }
+    ]
+  },
   "mine": {
     "name": "mine",
     "description": "Mine resources.",
@@ -268,61 +304,66 @@
         "choices": [
           {
             "name": "Stone",
-            "value": "Stone"
+            "value": "stone"
           },
           {
             "name": "Copper",
-            "value": "Copper"
+            "value": "copper"
           },
           {
             "name": "Tin",
-            "value": "Tin"
+            "value": "tin"
           },
           {
             "name": "Coal",
-            "value": "Coal"
+            "value": "coal"
           },
           {
             "name": "Gold",
-            "value": "Gold"
+            "value": "gold"
           },
           {
             "name": "Iron",
-            "value": "Iron"
+            "value": "iron"
           },
           {
             "name": "Sand",
-            "value": "Sand"
+            "value": "sand"
           },
           {
             "name": "Titanium",
-            "value": "Titanium"
+            "value": "titanium"
           },
           {
             "name": "Gravel",
-            "value": "Gravel"
+            "value": "gravel"
           },
           {
             "name": "Ruby",
-            "value": "Ruby"
+            "value": "ruby"
           },
           {
             "name": "Emerald",
-            "value": "Emerald"
+            "value": "emerald"
           },
           {
             "name": "Sapphire",
-            "value": "Sapphire"
+            "value": "sapphire"
           },
           {
             "name": "Amethyst",
-            "value": "Amethyst"
+            "value": "amethyst"
           },
           {
             "name": "Diamond",
-            "value": "Diamond"
+            "value": "diamond"
           }
         ]
+      },
+      {
+        "name": "multiplier",
+        "description": "How many times to 'run' the command. Default: 1.",
+        "type": 4
       },
       {
         "name": "private",
@@ -336,8 +377,8 @@
     "description": "Check someone's profile.",
     "options": [
       {
-        "name": "player",
-        "description": "Check this player's profile. Default: @you.",
+        "name": "user",
+        "description": "Check this user's profile. Default: @you.",
         "type": 6
       },
       {
